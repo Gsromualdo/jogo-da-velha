@@ -1,0 +1,23 @@
+body{
+    background-image:linear-gradient(rgb(173, 255, 230), rgb(255, 192, 229));
+}
+
+#forma {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#formato {
+    display: grid;
+    background-color:rgb(255, 241, 219); 
+    padding: 40%;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.281);
+}
+
+.botao{
+    margin-top: 10px;
+}
