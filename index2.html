@@ -9,31 +9,35 @@
 </head>
 <body>
     <div style="display: grid; grid-template-columns: 1fr 1fr;">
-        <h2 id="jogador">Nome do corno</h2>
+        <h2 id="jogador">Jogador 1</h2>
         <h2>X</h2>
 
-        <h2 id="jogador2">Nome do corno2</h2>
+        <h2 id="jogador2">Jogador 2</h2>
         <h2>O</h2>
     </div>
     <table>
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td id="0" onclick="jogada(0)"></td>
+            <td id="1" onclick="jogada(1)"></td>
+            <td id="2" onclick="jogada(2)"></td>
         </tr>
 
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td id="3" onclick="jogada(3)"></td>
+            <td id="4" onclick="jogada(4)"></td>
+            <td id="5" onclick="jogada(5)"></td>
         </tr>
 
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td id="6" onclick="jogada(6)"></td>
+            <td id="7" onclick="jogada(7)"></td>
+            <td id="8" onclick="jogada(8)"></td>
         </tr>
     </table>
+
+    <p id = "resultado"></p>
+    <button onclick="reiniciarJogo()">Reiniciar Jogo</button>
     <script src="./index.js"></script>
+    <script src="./actions.js"></script>
 </body>
 </html>
