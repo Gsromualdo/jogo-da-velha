@@ -1,5 +1,6 @@
 window.onload = function() {
   name();
+  atualizarDestaque();
 };
 
 function name() {
@@ -42,6 +43,20 @@ function jogada(posicao) {
   }
 
   jogadorAtual = jogadorAtual === 'X' ? 'O' : 'X'; 
+  atualizarDestaque();
+}
+
+function atualizarDestaque() {
+  let nome1 = document.getElementById('jogador');
+  let nome2 = document.getElementById('jogador2');
+
+  if(jogadorAtual == 'X') {
+    nome1.classList.add('destaque');
+    nome2.classList.remove('destaque');
+  }else{
+    nome1.classList.remove('destaque');
+    nome2.classList.add('destaque');
+  }
 }
 
 function checarVitoria() {
@@ -99,4 +114,5 @@ function reiniciarJogo() {
   for (let i = 0; i < 9; i++) {
       document.getElementById(i).innerText = '';
   }
+  atualizarDestaque();
 }

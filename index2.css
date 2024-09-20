@@ -4,6 +4,7 @@ body {
     display: grid;
     height: 100vh;
     grid-template-rows: 1fr 5fr;
+    background-image:linear-gradient(rgb(173, 255, 230), rgb(255, 192, 229));
 }
 
 table {
@@ -15,5 +16,21 @@ td {
     
     width: 5vh;
     height: 5vh;
-    background-color: rgb(255, 133, 133);
+    background-color: rgb(255, 241, 219);
+}
+
+.destaque {
+    background-color: blanchedalmond;
+    padding: 10px;
+    border-radius: 5px;
+}
+.simbolo2 {
+    padding: 10px;
+}
+
+button {
+    display: block;
+    background-color: rgba(245, 126, 205, 0.904);
+    border-radius: 10px;
+    font-family: inherit;
 }
